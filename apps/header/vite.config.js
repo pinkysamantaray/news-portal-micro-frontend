@@ -1,26 +1,18 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import tailwindcss from 'tailwindcss'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [vue()],
-  css: {
-    postcss: {
-      plugins: [tailwindcss()],
-    },
-  },
-  // optimizeDeps: {
-  //   include: ['linked-dep'],
-  // },
+  plugins: [
+    vue(), 
+    tailwindcss()
+  ],
   build: {
     lib: {
       entry: './src/main.js',
       name: 'Header',
       fileName: 'header',
-    },
-    // commonjsOptions: {
-    //   include: [/linked-dep/, /node_modules/],
-    // },
+    }
   },
 })
 

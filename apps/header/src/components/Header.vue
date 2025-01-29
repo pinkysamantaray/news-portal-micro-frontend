@@ -43,9 +43,9 @@ import Datatable from './Datatable.vue';
         <ul class="menu menu-horizontal bg-base-200 rounded-box px-1">
           <li><a>World</a></li>
           <li>
-            <details>
+            <details class="dropdown">
               <summary>Tech</summary>
-              <ul class="bg-base-300 w-48 p-2">
+              <ul class="menu dropdown-content rounded-box bg-base-300 w-48 p-2">
                 <li><a>Submenu 1</a></li>
                 <li><a>Submenu 2</a></li>
               </ul>
